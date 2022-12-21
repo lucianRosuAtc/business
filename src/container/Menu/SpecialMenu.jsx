@@ -1,11 +1,14 @@
-import React from 'react';
-
-import './SpecialMenu.css';
+import React from 'react'
+import {images, data} from'../../constants'
+import { SubHeading, MenuItem } from '../../components';
+import './SpecialMenu.css'
 
 const SpecialMenu = () => (
-  <div>
-    SpecialMenu
+  <div className='app__specialMenu flex__center section__padding' id='menu'>
+    <div>
+      
+    </div>
   </div>
 );
 
-export default SpecialMenu;
+export default SpecialMenu
