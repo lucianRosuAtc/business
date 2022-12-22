@@ -1,11 +1,22 @@
-import React from 'react';
+import React from 'react'
+import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs'
+import { meal } from '../../constants'
+import './Intro.css'
 
-import './Intro.css';
+const Intro = () => {
+  const vidRef = React.useRef()
+  return(
+    <div className='app__video'>
+      <video
+      src={meal} 
+      ref={vidRef}
+      type="video/mp4"
+      loop 
+      controls={false}
+      muted
+      />
+    </div>
+  )
+}
 
-const Intro = () => (
-  <div>
-    Intro
-  </div>
-);
-
-export default Intro;
+export default Intro
